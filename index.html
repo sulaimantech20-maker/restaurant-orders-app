@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css"/>
+    
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <title>Jimmy's Diner</title>
+</head>
+<body>
+    <div class="root">
+        <header>
+            <span class="logo">
+                Jimmy's Diner
+            </span>
+            <p class="logo-caption">
+                The best burgers and pizzas in town.
+            </p>
+        </header>
+        <main>
+            <div class="items-ctn" id="items-ctn">
+        
+            </div>
+
+            <div class="order-process" id="order-process">
+                
+            </div>
+
+            <!-- Payment Conatiner -->
+            <div class="pay-ctn" id="pay-ctn">
+                <div class="pay-box">
+                    <h2>Enter Card Details</h2>
+                    <form id="pay-form">
+                        <input 
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Enter your name"
+                        required
+                        >
+                        <input 
+                        type="text"
+                        name="card-num"
+                        id="card-num"
+                        placeholder="Enter your card number"
+                        required
+                        >
+                        <input 
+                        type="text"
+                        name="cvv"
+                        id="cvv"
+                        placeholder="Enter your CVV"
+                        required
+                        >
+
+                        <button>
+                            Pay
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+<script type="module" src="index.js"></script>
+</html>

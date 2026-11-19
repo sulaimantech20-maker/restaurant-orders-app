@@ -1,0 +1,76 @@
+@import "./css/items.css";
+@import "./css/order.css";
+@import "./css/payment.css";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Smythe", system-ui;
+}
+
+:root{
+    /* Colors */
+    --brown: #603E1E;
+    --pale-gold: #F1D9A8;
+    --glowing-gold: #FFC34D;
+}
+
+body{
+    height: 100dvh;
+    background-color: var(--brown);
+}
+
+.root{
+    height: 100dvh;
+    max-width: 500px;
+    margin-inline: auto;
+}
+
+/* Header styles =================== */
+
+header{
+    height: 125px;
+    background: linear-gradient(rgba(0,0,0,0.5)), url("./assets/ferks-guare-KEZdWfYD-ow-unsplash\ 1.png"); 
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 35px;
+    color: var(--pale-gold);
+}
+
+.logo{
+    font-size: 29px;
+}
+
+.logo-caption{
+    font-size: 16px;
+}
+
+
+/* Main =============================== */
+
+main{
+    padding: 35px 20px;
+    height: calc(100dvh - 125px);
+    background-color: var(--brown);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+button{
+    cursor: pointer;
+    scale: 1 1;
+    transition: all 500ms ease-out;
+    user-select: none;
+}
+
+button:active{
+    scale: 0.8 0.8;
+}
+
+button i{
+    user-select: none;
+}
